@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container sign-up">
+      <h2>Sign<span class="accent"> Up</span></h2>
+      <p>
+        Please use the form below to contact us. Enter your name, email, and
+        message and we'll get back to you shortly.
+      </p>
+      <form class="sign-up-form" action="">
+        <div class="sign-up-form-input">
+          <label class="form-lable" for="user-name"></label>
+          <div class="form-field">
+            <input
+              class="form-input"
+              id="user-name"
+              type="text"
+              name="user-name"
+              maxlength="40"
+              pattern="[A-Za-z]{1,32}"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="sign-up-form-input">
+            <label class="form-lable" for="email-address"></label>
+            <div class="form-field">
+              <input
+                class="form-input"
+                id="email-address"
+                type="email"
+                name="email"
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                placeholder="Enter your email"
+              />
+            </div>
+          </div>
+          <div class="sign-up-form-comment">
+            <label class="form-lable" for="user-comment"></label>
+            <textarea
+              class="form-comment"
+              name="user-comment"
+              id="user-comment"
+              rows="4"
+              placeholder="Message"
+            ></textarea>
+          </div>
+        </div>
+        <button class="button-send" type="submit">Send</button>
+        <p class="privacy-policy">
+          By clicking on “Send” button, you agree to our
+          <span class="privacy-policy-accent">Privacy Policy</span>, and allow
+          Promodo to use this information for marketing purposes.
+        </p>
+      </form>
+    </div>
+    <footer></footer>
+  </body>
+</html>
